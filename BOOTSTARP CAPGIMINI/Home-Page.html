@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit_User_Details</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/21a41dc846.js"></script>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        #myVideo {
+            position: relative;
+            right: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+        .contentOne {
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: #f1f1f1;
+            width: 100%;
+            padding: 20px;
+        }
+        .contentTwo{
+            position: absolute;
+            top: 50%;
+            left: 2%;
+            height: 40px;
+            width: 100px;
+        }
+        .contentThree{
+            position: relative;
+            background: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid p-0 m-0">
+        <div>
+            <video muted autoplay loop class="w-100 h-auto" id="myVideo"
+                src="videos/Capgemini_Stacey_Fluhler_BANNER_HOMEPAGE.mp4" type="video/mp4"></video>
+            <div class="contentOne mt-0">
+                <div class="row w-100"><div class="col-sm-6"><img src="images/Picture1.png" alt=""><div class="col-sm-6"><div class="btn-group"><i class="fa fa-user py-2" aria-hidden="true"></i>
+                    <button type="button" class="dropdown-toggle bg-transparent text-warning border-0 text-center"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Hello,CA Dealer
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Home</a>
+                        <a class="dropdown-item" href="#">Sample 2</a>
+                        <a class="dropdown-item" href="#">Sample 3</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </div></div></div></div>
+                <p>	
+                    Experienced Professionals
+                    Ready to take a bold step and do more than you think with a diverse collective of free-thinkers, entrepreneurs, and industry experts.</p>
+                <button id="myBtn" class="btn btn-transparent px-1" onclick="myFunction()">II</button>
+            </div>
+            <div class="contentTwo">
+                <div class="row"><div class="col-sm-12 w-100"><div class="carousel-caption"><a href="#" data-toggle="tooltip" title="Thank You Sir !"><button class="btn btn-secondary w-100">Click Here !</button></a></div>
+            </div></div>
+                    
+            </div>
+            <div class="contentThree">
+                <div class="row">
+                    <div class="col-sm-6 text-end"><a href="New-User.html"><button class="btn btn-primary w-25">New User</button></a></div>
+                    <div class="col-sm-6 text-start"><a href="Registered-Users-Details.html"><button class="btn btn-info text-white w-25">Registered Users</button></a></div>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function(){
+                  $('[data-toggle="tooltip"]').tooltip();   
+                });
+            </script>
+            <script>
+                var video = document.getElementById("myVideo");
+                var btn = document.getElementById("myBtn");
+
+                function myFunction() {
+                    if (video.paused) {
+                        video.play();
+                        btn.innerHTML = "Pause";
+                    } else {
+                        video.pause();
+                        btn.innerHTML = "Play";
+                    }
+                }
+            </script>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User_Details</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTRAP PAGE 2</title>
+    <script src="https://use.fontawesome.com/21a41dc846.js"></script>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        #userSearch {
+            border-bottom-left-radius: 3px;
+            border-top-left-radius: 3px;
+            border-left: 0px;
+            border-top: 0px;
+            border-bottom: 0px;
+        }
+
+        .fa-search {
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid px-0">
+        <div class="row m-0">
+            <div class="col-sm-10 p-0">
+                <div class="row m-0 p-0">
+                    <div class="col-sm-2"><a href="Home-Page.html"><img src="images/Picture1.png" class="py-1 w-100 h-100" alt="logo"></a>
+                    </div>
+                    <div class="col-sm-10 py-2 text-start d-flex"><h5 class="m-0 text-primary text-start">GST</h5> <h5 class="m-0 text-info text-center px-1">ASP Portal</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 py-2 text-end">
+                <div class="btn-group"><i class="fa fa-user text-secondary py-2" aria-hidden="true"></i>
+                    <button type="button" class="dropdown-toggle bg-white text-info border-0" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Hello,CA Dealer
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="Home-page.html">Home</a>
+                        <a class="dropdown-item" href="#">Sample 2</a>
+                        <a class="dropdown-item" href="#">Sample 3</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row m-0 bg-primary text-white">
+            <div class="col-sm-12 text-end p-3"><button class="border-0 bg-primary text-white">Login as Admin</button>
+            </div>
+        </div>
+        <div class="row m-0">
+            <div class="row m-0 px-3" style="background-color: #d8d9d7;">
+                <div class="col-sm-8 text-end py-1 px-2"><a href="New-User.html"><button type="button"
+                            class="btn btn-success px-2 py-1 border-0 mt-2">New User</button></a></div>
+                <div class="col-sm-4 text-end py-2">
+                    <div class="row p-0">
+                        <div class="col-sm-11 px-0 py-1 "><input type="search" id="userSearch"
+                                placeholder=" Search User..." class="py-1 w-100"></div>
+                        <div class="col-sm-1 text-center px-0 py-1"><i class="fa fa-search bg-white w-100 p-2"
+                                aria-hidden="true"></i></div>
+                    </div>
+                </div>
+                <div class="row p-1 bg-white border m-0">
+                    <h5 class="text-info">User Details </h5><br>
+                    <h6>User ID:Test 123</h6>
+                    <div class="col-sm-12 p-3">
+                        <div class="row py-2 px-1 bg-light border">
+                            <div class="col-sm-12 px-5 py-1 d-flex">
+                                <div class="w-50 p-0">
+                                    <div class="row py-1">
+                                        <div class="col-sm-4 text-end">
+                                            <label for="nameUser" class="py-1 px-0">Name</label>
+                                        </div>
+                                        <div class="col-sm-8 px-0"><input disabled="true" type="text" placeholder="Test User Name"
+                                                class="p-1 w-100 form-control bg-light border-0"></div>
+                                    </div>
+                                    <div class="row py-1">
+                                        <div class="col-sm-4 text-end">
+                                            <label for="companyName" class="py-1 px-0">Company Name</label>
+                                        </div>
+                                        <div class="col-sm-8 px-0"><input disabled="true" type="text" placeholder="Test Company Name"
+                                                class="p-1 w-100 form-control bg-light border-0"></div>
+                                    </div>
+                                    <div class="row py-1">
+                                        <div class="col-sm-4 text-end">
+                                            <label for="companyAddress" class="py-1 px-0">Company Address</label>
+                                        </div>
+                                        <div class="col-sm-8 px-0"><input disabled="true" type="text" placeholder="Address Line 1"
+                                                class="p-1 w-100 form-control bg-light border-0"></div>
+                                    </div>
+                                    <div class="row py-1">
+                                        <div class="col-sm-4 text-end">
+                                            <label for="emptyTag" class="py-1 px-0">&nbsp;</label>
+                                        </div>
+                                        <div class="col-sm-8 px-0"><input disabled="true" type="text" placeholder="Address Line 2"
+                                                class="p-1 w-100 form-control bg-light border-0"></div>
+                                    </div>
+                                    <div class="row py-1">
+                                        <div class="col-sm-4 text-end">
+                                            <label for="emptyTag" class="py-1 px-0">&nbsp;</label>
+                                        </div>
+                                        <div class="col-sm-8 px-0"><input disabled="true" type="text" placeholder="Address Line 3"
+                                                class="p-1 w-100 form-control bg-light border-0"></div>
+                                    </div>
+                                    <div class="row py-1">
+                                        <div class="col-sm-4 text-end">
+                                            <label for="contactNumber" class="py-1 px-0 ">Contact Number</label>
+                                        </div>
+                                        <div class="col-sm-8 px-0">
+                                            <div class="row py-1">
+                                                <div class="col-sm-8"><input disabled="true" type="text" placeholder="000 000 0000"
+                                                        class="p-1 w-100 form-control bg-light border-0"></div>
+                                                <div class="col-sm-4 py-1 px-0">&nbsp;</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-50 p-0">
+                                    <div class="row py-1">
+                                        <div class="col-sm-4 text-end">
+                                            <label for="eMail" class="py-1 px-0">E-mail</label>
+                                        </div>
+                                        <div class="col-sm-8 px-0"><input disabled="true" type="text"
+                                                placeholder="testuser@testcompany.com"
+                                                class="p-1 w-100 form-control bg-light border-0">
+                                        </div>
+                                    </div>
+                                    <div class="row py-1">
+                                        <div class="col-sm-4 text-end">
+                                            <label for="companyCode" class="py-1 px-0">Company Code</label>
+                                        </div>
+                                        <div class="col-sm-8 px-0"><input disabled="true" type="text" placeholder="Test Company Code"
+                                                class="p-1 w-100 form-control bg-light border-0"></div>
+                                    </div>
+                                    <div class="row py-1">
+                                        <div class="col-sm-4 text-end">
+                                            <label for="gstIn1" class="py-1 px-0">GSTIN1</label>
+                                        </div>
+                                        <div class="col-sm-8 px-0"><input disabled="true" type="text" placeholder="Sample Text"
+                                                class="p-1 w-100 form-control bg-light border-0"></div>
+                                    </div>
+                                    <div class="row py-1">
+                                        <div class="col-sm-4 text-end">
+                                            <label for="gstIn2" class="py-1 px-0">GSTIN2</label>
+                                        </div>
+                                        <div class="col-sm-8 px-0"><input disabled="true" type="text" placeholder="Sample Text"
+                                                class="p-1 w-100 form-control bg-light border-0"></div>
+                                    </div>
+                                    <div class="row py-1">
+                                        <div class="col-sm-4 text-end">
+                                            <label for="gstIn3">GSTIN3</label>
+                                        </div>
+                                        <div class="col-sm-8 px-0" class="py-1 px-0"><input disabled="true" type="text"
+                                                placeholder="Sample Text"
+                                                class="p-1 w-100 form-control bg-light border-0"></div>
+                                    </div>
+                                    <div class="row py-1">
+                                        &nbsp;
+                                    </div>
+                                    <div class="row py-1 m-0">
+                                        <div class="col-sm-6 p-0">&nbsp;</div>
+                                        <div class="col-sm-6 p-0">
+                                            <div class="row m-0">
+                                                <div class="col-sm-4">&nbsp;</div>
+                                                <div class="col-sm-4 text-end p-1">&nbsp;
+                                                </div>
+                                                <div class="col-sm-4 text-start p-1">
+                                                    <a href="Edit-User.html"><button type="button"
+                                                            class="btn btn-success px-2 py-1 w-100">Edit</button></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
